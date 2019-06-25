@@ -216,6 +216,18 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.cards {
+  perspective: 150rem;
+  -moz-perspective: 150rem; }
+  .cards__side {
+    background-color: orangered;
+    color: #ffffff;
+    font-size: 6rem;
+    height: 50rem;
+    transition: all .8s; }
+  .cards:hover .cards__side {
+    transform: rotateY(180deg); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -275,3 +287,8 @@ body {
   transform: skewY(-7deg); }
   .section-features > * {
     transform: skewY(7deg); }
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 30rem 0 50rem 0;
+  margin-top: -9rem; }
