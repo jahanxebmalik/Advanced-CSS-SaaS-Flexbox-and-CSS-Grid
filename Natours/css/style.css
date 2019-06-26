@@ -230,7 +230,10 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .cards__side--front {
       background-color: #fff; }
     .cards__side--back {
@@ -239,9 +242,21 @@ body {
       .cards__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
   .cards:hover .cards__side--front {
-    transform: rotateY(180deg); }
+    transform: rotateY(-180deg); }
   .cards:hover .cards__side--back {
     transform: rotateY(0); }
+  .cards__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    .cards__picture--1 {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
+    .cards__picture--2 {
+      background-image: url(../img/nat-5.jpg); }
+    .cards__picture--3 {
+      background-image: url(../img/nat-5.jpg); }
 
 .row {
   max-width: 114rem;
@@ -275,6 +290,7 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
   .header__logo-box {
     position: absolute;
