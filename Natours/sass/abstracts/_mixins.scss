@@ -46,7 +46,7 @@ RESPONSIVE ORDER: Base + typography > general layout + grid > page layout > comp
 //phone: 600 / 16 = 37.5em
 @mixin respond($breakpoint) {
     @if $breakpoint==phone {
-        @media (max-width: 37.5) {
+        @media (max-width: 37.5em) {
             //600px
             @content
         }
