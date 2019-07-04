@@ -623,6 +623,9 @@ body {
         display: inline-block;
         width: 100%;
         height: auto; } }
+    @media (max-width: 37.5em) {
+      .popup__left {
+        display: block; } }
   .popup__right {
     width: 66.666667%;
     display: table-cell;
@@ -631,7 +634,8 @@ body {
     @media (max-width: 75em) {
       .popup__right {
         width: 100%;
-        display: inline-block; } }
+        display: inline-block;
+        padding: .5rem 1rem; } }
   .popup__img {
     display: block;
     width: 100%; }
@@ -640,6 +644,9 @@ body {
         display: inline-block;
         width: 50%;
         float: left; } }
+    @media (max-width: 37.5em) {
+      .popup__img {
+        display: block; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -653,6 +660,9 @@ body {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+    @media (max-width: 37.5em) {
+      .popup__text {
+        column-count: 1; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
