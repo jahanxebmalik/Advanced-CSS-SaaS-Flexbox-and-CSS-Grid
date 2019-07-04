@@ -43,10 +43,6 @@ RESPONSIVE ORDER: Base + typography > general layout + grid > page layout > comp
 */
 
 // 1em = 16px
-
-
-
-
 @mixin respond($breakpoint) {
 
     //small-phone: 300/16 = 18.75em;
