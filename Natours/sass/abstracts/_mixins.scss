@@ -43,8 +43,23 @@ RESPONSIVE ORDER: Base + typography > general layout + grid > page layout > comp
 */
 
 // 1em = 16px
-//phone: 600 / 16 = 37.5em
+
+
+
+
 @mixin respond($breakpoint) {
+
+    //small-phone: 300/16 = 18.75em;
+    @if $breakpoint==small-phone {
+        @media (max-width: 18.75em) {
+            //1800px
+            @content
+        }
+
+        ;
+    }
+
+    //phone: 600 / 16 = 37.5em
     @if $breakpoint==phone {
         @media (max-width: 37.5em) {
             //600px
@@ -74,6 +89,7 @@ RESPONSIVE ORDER: Base + typography > general layout + grid > page layout > comp
         ;
     }
 
+
     //big-desktop: 1800 / 16 = 112.5em
     @if $breakpoint==big-desktop {
         @media (min-width: 112.5em) {
@@ -83,4 +99,6 @@ RESPONSIVE ORDER: Base + typography > general layout + grid > page layout > comp
 
         ;
     }
+
+
 }
