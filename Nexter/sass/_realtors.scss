@@ -10,8 +10,7 @@
     grid-row-gap: 2rem;
 
     @media only screen and (max-width: $bp-medium) {
-        grid-template-columns: 1 / -1;
-        // grid-template-rows: 2 / 3;
+        grid-column: 1 / -1;
     }
 
     &__list {
@@ -21,6 +20,10 @@
         grid-row-gap: 5vh;
 
         align-items: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-template-columns: repeat(3, min-content max-content);
+        }
     }
 
     &__img {
